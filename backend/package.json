@@ -4,12 +4,15 @@
   "description": "CI/CD demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node -r esm index.js",
+    "test": "c8 mocha -r esm ./test/* --exit "
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2"
+    "esm": "^3.2.25",
+    "express": "^4.17.2",
+    "supertest": "^6.2.2"
   },
   "devDependencies": {
     "c8": "^7.11.0",
