@@ -8,7 +8,7 @@ describe ('Smoke tests', () => {
     it ('Port gets assigned properly', () => {
         expect(port()).to.be.a('number')
         expect(port()).to.not.be.oneOf(['', 'undefined'])
-        expect(port()).to.equal(6000)
+        expect(port()).to.equal(5000)
     })
 
     it ('Server returns expected value', (done) => {
