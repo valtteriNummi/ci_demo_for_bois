@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node -r esm ./backend/index.js",
-    "test": "mocha -r esm ./backend/test/* --exit "
+    "test": "c8 mocha -r esm ./backend/test/* --exit "
   },
   "author": "",
   "license": "ISC",
