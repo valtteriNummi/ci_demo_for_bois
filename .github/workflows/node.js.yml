@@ -13,7 +13,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    main: 'backend/index.js'
 
     strategy:
       matrix:
