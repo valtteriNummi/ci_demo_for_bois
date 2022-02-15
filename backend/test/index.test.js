@@ -1,14 +1,17 @@
 import request from "supertest";
 import { expect } from "chai";
+import 'dotenv/config'
 
 import app, { port } from '../index.js'
 
 describe ('Smoke tests', () => {
 
+    const _env = process.env
+    
     it ('Port gets assigned properly', () => {
-        expect(port()).to.be.a('number')
+        expect(port()).to.be.a('string')
         expect(port()).to.not.be.oneOf(['', 'undefined'])
-        expect(port()).to.equal(5000)
+        expect(port()).to.be.oneOf([`${_env.PORT}`, '5000'])
     })
 
     it ('Server returns expected value', (done) => {
