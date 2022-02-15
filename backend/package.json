@@ -12,6 +12,7 @@
   "dependencies": {
     "esm": "^3.2.25",
     "express": "^4.17.2",
+    "heroku": "^7.59.2",
     "supertest": "^6.2.2"
   },
   "devDependencies": {
