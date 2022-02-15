@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Login to Heroku
         env: ${{secrets.HEROKU_API_KEY}}
-        run: heroku login
+        run: heroku container:login
         # with: 
         #   heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
         #   heroku_email: ${{secrets.HEROKU_EMAIL}}
