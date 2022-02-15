@@ -8,8 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Login to Heroku
-        run: heroku container:login
-        env: ${{secrets.HEROKU_API_KEY}}
+        run: heroku login
+        # env: ${{secrets.HEROKU_API_KEY}}
         # with: 
         #   heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
         #   heroku_email: ${{secrets.HEROKU_EMAIL}}
