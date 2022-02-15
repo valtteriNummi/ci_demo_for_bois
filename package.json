@@ -4,7 +4,7 @@
   "description": "CI/CD demo",
   "main": "index.js",
   "scripts": {
-    "start": "node -r esm ./backend/index.js",
+    "start": "node ./backend/index.js",
     "test": "c8 mocha -r esm ./backend/test/* --exit "
   },
   "author": "",
