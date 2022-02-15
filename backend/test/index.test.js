@@ -9,7 +9,6 @@ describe ('Smoke tests', () => {
     const _env = process.env
     
     it ('Port gets assigned properly', () => {
-        expect(port()).to.be.a('string')
         expect(port()).to.not.be.oneOf(['', 'undefined'])
         expect(port()).to.be.oneOf([`${_env.PORT}`, '5000'])
     })
