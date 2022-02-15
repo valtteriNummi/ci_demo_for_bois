@@ -1,15 +1,15 @@
-name: Deploy
+# name: Deploy
 
-on: [push]
+# on: [push]
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Login to Heroku
-        run: heroku auth:login
-        env: ${{secrets.HEROKU_API_KEY}}
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: Login to Heroku
+#         run: heroku auth:login
+#         env: ${{secrets.HEROKU_API_KEY}}
         # with: 
         #   heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
         #   heroku_email: ${{secrets.HEROKU_EMAIL}}
